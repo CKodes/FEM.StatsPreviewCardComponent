@@ -68,6 +68,10 @@ html {
 }
 ```
 
+- Better CSS formating
+
+I grouped the CSS according to sections and arranged the properties in **alphabetic order**.
+
 ### Continued development
 
 - Add dark mode toggle
