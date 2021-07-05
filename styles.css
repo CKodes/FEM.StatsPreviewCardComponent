@@ -1,0 +1,200 @@
+body,
+html {
+  background-color: hsl(233, 47%, 7%);
+  color: hsl(0, 0%, 100%);
+  font-family: 'Lexend Deca', sans-serif;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+.holder {
+  box-sizing: border-box;
+  height: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 10% 15%;
+  width: 100vw;
+}
+
+.cardholder {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 5% 0 5% 0;
+}
+
+/* Content-Card */
+
+.content-card {
+  background-color: hsl(244, 38%, 16%);
+  padding: 7%;
+  width: 50%;
+}
+
+.intro-title,
+.stats-num{
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+.intro-para {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin: 40px 0 70px 0;
+}
+
+.stat-box {
+  display: inline-block;
+}
+
+.stat-two {
+  margin: 0 10% 0 10%;
+}
+
+.stats-para {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Image-Card */
+
+.img-card {
+  background: url(images/image-header-desktop.jpg) hsla(277, 64%, 61%);
+  background-size: cover;
+  border: 0;
+  border-radius: 0 10px 10px 0;
+  background-blend-mode: multiply;
+  height: auto;
+  padding: 7%;
+  width: 50%;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+}
+
+.solution {
+  display: inline-block;
+}
+
+a {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(277, 64%, 61%);
+}
+
+
+/* Mediq Query for Mobile Width 375px */
+@media (max-width: 1350px) {
+  .cardholder {
+    display: block;
+    padding: 0;
+    text-align: center;
+  }
+
+  /* Content-Card */
+
+  .content-card {
+    border-radius: 0 0 10px 10px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .intro-title {
+    padding: 5% 5% 3% 5%;
+  }
+  
+  .intro-para {
+    margin: 0;
+    padding: 0 20% 5% 20%;
+  }
+  
+  .stats-row {
+    padding-bottom: 5%;
+  }
+  
+  /* Image-Card */
+
+  .img-card {
+    border-radius: 10px 10px 0 0;
+    height: 350px;
+    padding: 0;
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    margin: 3%;
+  }
+}
+
+
+/* Mediq Query for in-between width */
+@media (max-width: 680px) {
+
+  .holder {
+    overflow-y: auto;
+    padding: 10% 5% 10% 5%;
+  }
+
+  .cardholder {
+    display: block;
+    text-align: center;
+  }
+
+  /* Content-Card */
+
+  .content-card {
+    border-radius: 0 0 10px 10px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .stat-box {
+    display: block;
+    padding: 5%;
+  }
+
+  .stats-num {
+    font-size: 1.7rem;
+    padding: 5px;
+  }
+
+  .stat-three {
+    padding-bottom: 40px;
+  }
+
+  .intro-title {
+    font-size: 1.7rem;
+    padding: 10%;
+  }
+
+  .intro-para {
+    font-size: 0.95rem;
+    margin: 0;
+    padding: 0 10% 10% 10%;
+  }
+
+  /* Image-Card */
+
+  .img-card {
+    border-radius: 10px 10px 0 0;
+    height: 300px;
+    padding: 0;
+    width: 100%;
+  }
+
+  /* Footer */
+  .solution {
+    padding-top: 3%;
+  }
+}
